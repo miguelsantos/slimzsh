@@ -4,3 +4,12 @@
 if [[ -f /usr/local/bin/pygmentize ]]; then
   alias dog='pygmentize -g'
 fi
+
+
+# cd aliases
+
+alias cd..='cd ..'
+alias cd...='cd ../..'
+alias cd....='cd ../../..'
+alias cd.....='cd ../../../..'
+alias cd......='cd ../../../../..'
