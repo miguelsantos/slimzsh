@@ -1,1 +1,6 @@
-alias dog='pygmentize -g'
+# Dog is cat but whith syntax highlighting
+## Depends on python package "python-pygments"
+
+if [[ -f /usr/local/bin/pygmentize ]]; then
+  alias dog='pygmentize -g'
+fi
