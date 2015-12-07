@@ -1,50 +1,14 @@
-slimzsh
-=======
+Miguel's slimzsh fork
+=====================
 
-A small, usable configuration for ZSH
+This is a fork of slimzsh, a lean zsh configuration framework.
+It can be found [here](https://github.com/changs/slimzsh).
 
-# Install
+# Fork
 
-```
-git clone --recursive https://github.com/changs/slimzsh.git ~/.slimzsh
-```
+This repo is a submodule of my [dotfiles](https://github.com/miguelsantos/dotfiles), being part of the zsh configuration.
 
-Add following to `~/.zshrc`
+# Workflow
 
-```
-source "$HOME/.slimzsh/slim.zsh"
-```
-
-# Features
-
-Slimzsh has:
-
-* beautiful [pure](https://github.com/sindresorhus/pure) as a shell prompt
-* [syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-* tab completion for commands and args (with switching menu and help)
-
-![alt text](http://i.imgur.com/sVJOSOU.png "Tab Completion")
-![alt text](http://i.imgur.com/wY25hkn.png "Syntax Highlighting")
-
-
-## fasd
-
-I highly recommend using [fasd](https://github.com/clvv/fasd).
-Slimzsh will automatically detect it if you have it installed.
-
-Then you'll be able to search inline for the best matching file like here:
-
-![alt text](http://i.imgur.com/s2LeC9K.gif "FASD")
-
-and so much more!
-
-## Local modifications
-
-1. if you want to add custom aliases, create `~/.slimzsh/aliases.zsh.local` file
-   and put them there - this file will be automatically sourced.
-
-## Tips
-
-The theme used in screenshots: [Tomorrow Night Eighties](https://github.com/chriskempson/tomorrow-theme)
-with the Ubuntu Mono 15pt font.
-
+1. To bump the submodules (pure and zsh-syntax-highlight) do: `git submodule update --remote`
+2. When working on this as a submodule, don't `git push` directly, go to the top project dir, commit the changes and then `git push --recurse-submodules=on-demand` to publish them at the same time
