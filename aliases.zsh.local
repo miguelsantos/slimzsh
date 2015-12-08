@@ -1,15 +1,18 @@
 # Dog is cat but whith syntax highlighting
 ## Depends on python package "python-pygments"
-
 if [[ -f /usr/local/bin/pygmentize ]]; then
   alias dog='pygmentize -g'
 fi
 
 
 # cd aliases
-
 alias cd..='cd ..'
 alias cd...='cd ../..'
 alias cd....='cd ../../..'
 alias cd.....='cd ../../../..'
 alias cd......='cd ../../../../..'
+
+
+# ls aliases
+alias ll='ls -lh'					## human readable ls with permissions
+alias la='ll -a'					## ll plus hidden files
